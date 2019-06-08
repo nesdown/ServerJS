@@ -14,7 +14,7 @@ server = http.createServer(function(request, response) {
 	console.log(request.url);
 
 	// Run request and response through the web 
-	proxyServer.web(request, response, { target: request.url });
+	proxyServer.web(request, response, { target: "http://z-digital.net" });
 
 	// Launch a proxy with error handling
 	proxyServer.on('error', function(e) {
